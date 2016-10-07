@@ -1,0 +1,32 @@
+name: Venyoo
+version: 0.1.0
+description: Intelligent chat bot for site http://venyoo.ru
+icon: plug
+author:
+  name: FullZero5
+  email: fullzero5@gmail.com
+homepage: https://github.com/FullZero5/grav-plugin-venyoo
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/FullZero5/grav-plugin-venyoo/issues
+docs: https://github.com/FullZero5/grav-plugin-venyoo/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    widget_id:
+      type: text
+      label: widget_id
+      placeholder: '123456...'
+      help: Paste widget_id in http://account.venyoo.ru/project/widget-script/
