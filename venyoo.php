@@ -46,12 +46,6 @@ class VenyooPlugin extends Plugin
               })();
         ";
         $this->grav['assets']->addInlineJs($init);
-
-
-        // Enable the main event we are interested in
-       // $this->enable([
-       //     'onPageContentRaw' => ['onPageContentRaw', 0]
-       // ]);
     }
   }
 }
